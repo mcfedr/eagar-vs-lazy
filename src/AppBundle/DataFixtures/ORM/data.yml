@@ -1,0 +1,9 @@
+AppBundle\Entity\Company:
+    company{1..10}:
+        name: <name()>
+
+AppBundle\Entity\Employee:
+    emp{1..100}:
+        first: <firstName()>
+        last: <lastName()>
+        company: '@company<numberBetween(1, 10)>'
