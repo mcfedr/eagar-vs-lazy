@@ -38,7 +38,7 @@ class Employee
     /**
      * @var Company
      *
-     * @ORM\ManyToOne(targetEntity="Company", inversedBy="employees", fetch="EAGER")
+     * @ORM\ManyToOne(targetEntity="Company", inversedBy="employees", fetch="EXTRA_LAZY")
      */
     private $company;
 

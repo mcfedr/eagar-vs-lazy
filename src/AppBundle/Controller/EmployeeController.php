@@ -27,6 +27,8 @@ class EmployeeController extends Controller
         $employees = $em->getRepository('AppBundle:Employee')->findAll();
 
 //        $employees = $em->getRepository(Employee::class)->createQueryBuilder('e')
+//            ->select('e', 'c')
+//            ->join('e.company', 'c')
 //            ->getQuery()
 //            ->getResult();
 

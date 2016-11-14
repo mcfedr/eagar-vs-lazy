@@ -24,6 +24,12 @@
                         <li>
                             <a href="{{ path('company_edit', { 'id': company.id }) }}">edit</a>
                         </li>
+                        <li>
+                            Count {{ company.employees.count }}
+                            {% for employee in company.employees %}
+                                {{ employee.first }}
+                            {% endfor %}
+                        </li>
                     </ul>
                 </td>
             </tr>

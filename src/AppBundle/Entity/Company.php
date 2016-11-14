@@ -32,7 +32,7 @@ class Company
     /**
      * @var Collection
      *
-     * @ORM\OneToMany(targetEntity="Employee", mappedBy="company")
+     * @ORM\OneToMany(targetEntity="Employee", mappedBy="company", fetch="EXTRA_LAZY")
      */
     private $employees;
 
